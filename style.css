@@ -3,12 +3,19 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(to right, #c9184a, #ff4d6d);
+    text-align: center;
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 400;
     color: #fff0f3;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #06d6a0;
 }
 
 p {
@@ -21,7 +28,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .btn {
@@ -36,4 +42,57 @@ p {
 
 .btn:hover {
     border-color: #fff0f3;
+}
+
+.popup-container {
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff0f3;
+    border: 2px solid #fff0f3;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 30px;
+    position: relative;
+}
+
+.popup-close {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ef476f;
+}
+
+.sale {
+    background-color: transparent;
+    border: 3px dashed #06d6a0;
+    padding: 15px 10px;
+    cursor: pointer;
+    color: #06d6a0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.sale:hover {
+    background-color: #06d6a0;
+    border: 3px solid #06d6a0;
+    padding: 15px 10px;
+    cursor: pointer;
+    color: #fff0f3;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
